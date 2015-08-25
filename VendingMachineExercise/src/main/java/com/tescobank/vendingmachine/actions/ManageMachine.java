@@ -62,7 +62,7 @@ public class ManageMachine implements Action {
 
 	@Override
 	public boolean dispatchItem() throws CoinException{
-		throw new CoinException("Select firs a product, your coins will be returned.");
+		throw new CoinException("Select first a product, your coins will be returned.");
 	}
 
 }

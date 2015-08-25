@@ -64,18 +64,18 @@ public class AddingCoins implements Action {
 			ManagingCoins.getCoins().removeListCoins(moneyToReturn);
 
 			//Selling item
-			log.warning("Here we go!!, enjoy your item :) - " + this.machineItem.getItem());
+			log.warning("Enjoy your item :) - " + this.machineItem.getItem());
 			
 			//remove item that we are selling, from the list of items
 			ManagingItems.getItems().deleteItem(this.machineItem.getItem());
 			this.machineItem.setItem(null);
 			
 			//now we give the change
-			log.warning("Thaks, your money is coming!!: " + this.machineItem.getMoneyCoins());
+			log.warning("Thanks, Here is your change: " + this.machineItem.getMoneyCoins());
 			isDispatched = true;
 			
 		} else if (totCoins.compareTo(selectedItem.getQuantity()) == 0 ) {
-			log.warning("Here we go!!, enjoy your item :) - " + this.machineItem.getItem());
+			log.warning("Enjoy your item :) - " + this.machineItem.getItem());
 
 			//Remove item from the list
 			ManagingItems.getItems().deleteItem(this.machineItem.getItem());
